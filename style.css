@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+/* font-family: 'League Spartan', sans-serif; */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /* Primary */
+
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+
+    /* Neutral */
+
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --fff: hsl(0, 0%, 100%);
+}
+
+body{
+    width: 100%;
+    /* height: 100vh; */
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    overflow-x: hidden;
+}
+
+main{
+    /* background-color: blueviolet; */
+    width: 80vw;
+    margin: 5rem auto;
+}
+
+.sec-1{
+    display: flex;
+    justify-content: space-between;
+}
+.headings{
+
+}
+.heading{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+}
+.text{
+    line-height: 1.5;
+    margin-top: 1rem;
+    color: var(--Dark-Grayish-Magenta);
+}
+.proof-row{
+    background-color: var(--Light-Grayish-Magenta);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+.proof-row:nth-child(1){
+    transform: translateX(-60%);
+}
+.proof-row:nth-child(2){
+    transform: translateX(-40%);
+}
+.proof-row:nth-child(3){
+    transform: translateX(-20%);
+}
+.proof-text{
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+}
+
+
+.sec-2{
+    display: flex;
+    margin-top: 4rem;
+    gap: 1rem;
+}
+.proofer{
+    background-color: var(--Very-Dark-Magenta);
+    padding: 2rem;
+    border-radius: 10px;
+}
+.proofer-about{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.image img{
+    width: 50px;
+    border-radius: 50%;
+}
+.proofer-about h4{
+    color: var(--fff);
+}
+.proofer-about p{
+    padding-top: 0.3rem;
+    color: var(--Dark-Grayish-Magenta);
+}
+
+.proofer-text{
+    margin-top: 1.2rem;
+    line-height: 1.4;
+    color: var(--fff);
+}
+.proofer:nth-child(1){
+    transform: translateY(-10%);
+}
+.proofer:nth-child(3){
+    transform: translateY(10%);
+}
+
+@media (max-width: 375px) {
+    .sec-1{
+        flex-direction: column;
+    }
+    .sec-2{
+        flex-direction: column;
+    }
+    .proof-row{
+        flex-direction: column;
+    }
+    .proof-row:nth-child(1){
+        transform: translateX(0%);
+    }
+    .proof-row:nth-child(2){
+        transform: translateX(0%);
+    }
+    .proof-row:nth-child(3){
+        transform: translateX(0%);
+    }
+
+}
